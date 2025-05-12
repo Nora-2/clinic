@@ -1,4 +1,5 @@
 import 'package:clinic/core/utils/app_colors.dart';
+import 'package:clinic/core/utils/app_strings.dart';
 import 'package:clinic/features/appointments/presentation/cubit/apointment_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -16,14 +17,14 @@ class Tabbarmange extends StatelessWidget {
           children: [
             _buildButton(
               context: context,
-              label: 'الكل',
+              label: AppStrings.tabAll,
               isSelected: state.selectedFilter == AppointmentFilter.all,
               onTap: () => _onTabTap(context, 0),
             ),
             const SizedBox(width: 8),
             _buildButton(
               context: context,
-              label: 'اليوم',
+              label: AppStrings.tabToday,
               isSelected: state.selectedFilter == AppointmentFilter.today,
               onTap: () => _onTabTap(context, 1),
             ),

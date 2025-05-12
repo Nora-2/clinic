@@ -12,7 +12,7 @@ class AppointmentsCubit extends Cubit<AppointmentsState> {
 
   Future<void> loadAppointments() async {
     emit(state.copyWith(status: AppointmentStatus.loading));
-    await Future.delayed(const Duration(seconds: 1)); // Simulate network delay
+    await Future.delayed(const Duration(seconds: 1)); 
     _filterAndEmit();
   }
 

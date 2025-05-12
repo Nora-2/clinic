@@ -1,3 +1,4 @@
+import 'package:clinic/core/utils/app_strings.dart';
 import 'package:clinic/core/utils/constants.dart';
 import 'package:clinic/core/widgets/separator.dart';
 import 'package:clinic/features/appointments/models/appointment.dart';
@@ -113,7 +114,7 @@ class AppointmentCard extends StatelessWidget {
                           color: AppColors.primaryColor,
                         ),
                         label: Text(
-                          'اتصال',
+                         AppStrings.buttonCall,
                           style: TextStyle(color: AppColors.primaryColor),
                         ),
                         onPressed: () {},
@@ -133,7 +134,7 @@ class AppointmentCard extends StatelessWidget {
                           size: 18,
                           color: AppColors.primaryColor,
                         ),
-                        label: const Text('مراسلة'),
+                        label: const Text(AppStrings.buttonMessage),
                         onPressed: () {},
                       ),
                     ),

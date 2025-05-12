@@ -1,4 +1,5 @@
 
+import 'package:clinic/core/utils/app_strings.dart';
 import 'package:clinic/core/utils/constants.dart';
 import 'package:clinic/features/appointments/models/appointment.dart';
 import 'package:clinic/features/appointments/presentation/cubit/apointment_cubit.dart';
@@ -49,7 +50,7 @@ class BuildApointmentList extends StatelessWidget {
         state.status == AppointmentStatus.loaded) {
       return Center(
           child: Text(
-              'لا توجد مواعيد متاحة لـ ${expectedFilter == AppointmentFilter.today ? "اليوم" : "الكل"}.'));
+              '${AppStrings.noAppointmentsFor}${expectedFilter == AppointmentFilter.today ?AppStrings.tabToday : AppStrings.tabAll}.'));
     }
 
     return ListView.builder(
