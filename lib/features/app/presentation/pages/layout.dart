@@ -8,14 +8,10 @@ import 'package:clinic/business%20logic/appcubit/cubit/app_cubit.dart';
 import 'package:clinic/features/appointments/presentation/pages/appointment_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-
-
 class NavItemData {
   final NavTab tab;
   final IconData icon;
   final String label;
-
   const NavItemData({required this.tab, required this.icon, required this.label});
 }
 
