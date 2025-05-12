@@ -9,7 +9,7 @@ class AppTheme {
       fontFamily: 'NotoSansArabic', // Or system default if not specified
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.white,
-        elevation: 1,
+        elevation: 0,
         iconTheme: IconThemeData(color: AppColors.primaryColor),
         titleTextStyle: TextStyle(
           color: AppColors.textDark,
