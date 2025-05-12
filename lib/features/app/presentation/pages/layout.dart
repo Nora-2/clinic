@@ -4,7 +4,7 @@ import 'package:clinic/core/utils/app_colors.dart';
 import 'package:clinic/core/utils/app_strings.dart';
 import 'package:clinic/core/widgets/placeholder.dart'; 
 import 'package:clinic/features/Complaints/presentation/pages/compliment_screen.dart';
-import 'package:clinic/features/app/presentation/cubit/app_cubit.dart';
+import 'package:clinic/business%20logic/appcubit/cubit/app_cubit.dart';
 import 'package:clinic/features/appointments/presentation/pages/appointment_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

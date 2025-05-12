@@ -2,7 +2,7 @@
 import 'package:clinic/core/utils/app_strings.dart';
 import 'package:clinic/core/utils/constants.dart';
 import 'package:clinic/features/appointments/models/appointment.dart';
-import 'package:clinic/features/appointments/presentation/cubit/apointment_cubit.dart';
+import 'package:clinic/business%20logic/appointmentcubit/cubit/apointment_cubit.dart';
 import 'package:clinic/features/appointments/presentation/widgets/appointmentcard.dart';
 import 'package:flutter/material.dart';
 

@@ -1,6 +1,6 @@
 import 'package:clinic/core/utils/app_colors.dart';
 import 'package:clinic/core/utils/app_strings.dart';
-import 'package:clinic/features/appointments/presentation/cubit/apointment_cubit.dart';
+import 'package:clinic/business%20logic/appointmentcubit/cubit/apointment_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

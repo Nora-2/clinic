@@ -1,6 +1,6 @@
 import 'package:clinic/core/widgets/separator.dart';
 import 'package:clinic/core/utils/app_colors.dart';
-import 'package:clinic/features/appointments/presentation/cubit/apointment_cubit.dart';
+import 'package:clinic/business%20logic/appointmentcubit/cubit/apointment_cubit.dart';
 import 'package:clinic/features/appointments/presentation/widgets/Tabbarmanage.dart';
 import 'package:clinic/features/appointments/presentation/widgets/buildappointmentlist.dart';
 import 'package:clinic/features/appointments/presentation/widgets/buildsammarycard.dart';
@@ -44,17 +44,23 @@ class _AppointmentsScreenState extends State<AppointmentsScreen>
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.local_hospital, color: AppColors.primaryColor),
+          icon: Icon(Icons.local_florist, color: AppColors.primaryColor),
           onPressed: () {
             if (Navigator.canPop(context)) Navigator.pop(context);
           },
         ),
         actions: [
-          Padding(
+           Padding(
             padding: const EdgeInsets.only(right: 16.0, left: 8.0),
             child: Icon(Icons.notifications,
                 color: AppColors.primaryColor), // Placeholder logo
           ),
+          Padding(
+            padding: const EdgeInsets.only(right: 16.0, left: 8.0),
+            child: Icon(Icons.logout,
+                color: AppColors.primaryColor), // Placeholder logo
+          ),
+         
         ],
       ),
       body: BlocBuilder<AppointmentsCubit, AppointmentsState>(
@@ -102,26 +108,26 @@ class _AppointmentsScreenState extends State<AppointmentsScreen>
                     ],
                   ),
                 ),
-                //  Padding(
-                //      padding: const EdgeInsets.symmetric(vertical: 15.0),
-                //      child: ElevatedButton(
-                //        onPressed: () {
+                 Padding(
+                     padding: const EdgeInsets.symmetric(vertical: 5.0,horizontal:5),
+                     child: ElevatedButton(
+                       onPressed: () {
                                          
-                //        },
-                //        style: ElevatedButton.styleFrom(
-                //          backgroundColor: const Color.fromARGB(255, 3, 33, 84), // Dark background
-                //          foregroundColor: Colors.white, // White text
-                //          padding: const EdgeInsets.symmetric(horizontal: 45, vertical: 12), // Adjust padding
-                //          shape: RoundedRectangleBorder(
-                //            borderRadius: BorderRadius.circular(8),
-                //          ),
-                //        ),
-                //        child: const Text(
-                //          'احجز الان',
-                //          style: TextStyle(fontFamily: 'NotoSansArabic', fontWeight: FontWeight.bold, fontSize: 15),
-                //        ),
-                //      ),
-                //    ),
+                       },
+                       style: ElevatedButton.styleFrom(
+                         backgroundColor: AppColors.primaryColor, // Dark background
+                         foregroundColor: Colors.white, // White text
+                         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12), // Adjust padding
+                         shape: RoundedRectangleBorder(
+                           borderRadius: BorderRadius.circular(8),
+                         ),
+                       ),
+                       child: const Text(
+                         'احجز الان',
+                         style: TextStyle(fontFamily: 'NotoSansArabic', fontWeight: FontWeight.bold, fontSize: 15),
+                       ),
+                     ),
+                   ),
               ],
             ),
           );
