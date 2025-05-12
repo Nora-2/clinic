@@ -2,8 +2,8 @@
 import 'package:clinic/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
-class separator extends StatelessWidget {
-  const separator({
+class Separator extends StatelessWidget {
+  const Separator({
     super.key,
   });
 

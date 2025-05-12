@@ -75,7 +75,7 @@ class _AppointmentsScreenState extends State<AppointmentsScreen>
                 ),
               ),
               SizedBox(height: 8), // Space between summary and tab bar
-              separator(),
+              Separator(),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Align(

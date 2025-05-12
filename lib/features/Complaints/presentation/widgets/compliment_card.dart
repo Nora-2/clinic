@@ -66,7 +66,7 @@ class ComplaintCard extends StatelessWidget {
             ),
           ),
         ),
-                separator()
+                Separator()
       ],
     );
   }

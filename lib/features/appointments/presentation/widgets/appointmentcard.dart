@@ -144,7 +144,7 @@ class AppointmentCard extends StatelessWidget {
             ),
           ),
         ),
-        separator()
+        Separator()
       ],
     );
   }
